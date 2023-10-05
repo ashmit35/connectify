@@ -55,12 +55,12 @@ app.use("/posts", postRoutes);
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;
 mongoose
-    .connect(process.env.MONGO_URL, {
+    .connect("mongodb+srv://ashmitrock35:fwcz0173@socialmediacluster.xhaf24y.mongodb.net/?retryWrites=true&w=majority", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
     .then(() => {
-        app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
+        app.listen(PORT, () => console.log(`Mongo connected on server Port: ${PORT}`));
 
         /* ADD DATA ONE TIME */
         // User.insertMany(users);
