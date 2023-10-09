@@ -9,7 +9,7 @@ const UserImage = ({ image, size}) => {
         width={size ? size : "60px"}
         height={size ? size : "60px"}
         alt="user"
-        src={`http://localhost:3001/assets/${image}`}
+        src={`https://connectify-butf.onrender.com/assets/${image}`}
       />
     </Box>
   );

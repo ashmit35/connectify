@@ -22,7 +22,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath, list }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `http://localhost:3001/users/${_id}/${friendId}`,
+      `https://connectify-butf.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
